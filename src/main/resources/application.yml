@@ -1,0 +1,30 @@
+#spring:
+#  datasource:
+#    username: postgres
+#    password: postgres
+#    url: jdbc:postgres://localhost:5432/Shop
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+
+  datasource:
+
+    hikari:
+      register-mbeans: true
+    username: postgres
+    password: postgres
+
+    url: jdbc:postgresql://localhost:5432/Shop
+
+    driver-class-name: org.postgresql.Driver
+server:
+  port: 8080
+
+commission: 0.1
+coins:
+  divider: 10
+  multipler: 5

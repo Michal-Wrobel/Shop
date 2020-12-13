@@ -1,0 +1,37 @@
+[
+  {
+    "id": 110,
+    "userId": 34,
+    "title": "Obraz",
+    "description": "Picasso",
+    "price": 92,
+    "creationDate": {
+      "date": {
+        "year": 2020,
+        "month": 9,
+        "day": 17
+      },
+      "time": {
+        "hour": 21,
+        "minute": 29,
+        "second": 38,
+        "nano": 718756600
+      }
+    },
+    "updatedDate": {
+      "date": {
+        "year": 2020,
+        "month": 9,
+        "day": 17
+      },
+      "time": {
+        "hour": 21,
+        "minute": 29,
+        "second": 38,
+        "nano": 720755000
+      }
+    },
+    "categoryId": {
+      "id": 105,
+      "name": "BOOKS",
+      "products": [

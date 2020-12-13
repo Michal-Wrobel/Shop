@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  shop:
+    image: michalw123/shop
+    volumes:
+      - shop-data:/root
+    ports:
+      - 8080:8080
+    depends_on:
+      - 'postgres'
+    environment:
+      SPRING_PROFILES_ACTIVE: "dev"
+    networks:
+      goreit:
+
+  postgres:
+    image: postgres
+    volumes:
+      - goreit-postgres-data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=postgres
+      - PGDATA=Shop
+    networks:
+      - goreit
+networks:
+  goreit:
+volumes:
+  goreit-postgres-data:
+  shop-data:
+
+

@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "salesId": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "price": {
+      "type": "number"
+    },
+    "creationDate": {
+      "type": "string"
+    },
+    "updatedDate": {
+      "type": "string"
+    },
+    "categoryViews": {
+      "type": "object",
+      "items": {
+        "$ref": "#/definitions/categoryView"
+      }
+    }
+  },
+  "definitions": {
+    "categoryView": {
+      "type": "object",
+      "properties": {
+        "category type": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "category type"
+      ]
+    }
+  }
+}
+
